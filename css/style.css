@@ -1,0 +1,257 @@
+/* * Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* *Global CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* social Media Spart design */
+.first_part .social_media {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  left: -255px;
+  /* প্রথম আইকন বাদে যে ভিতরে ঢুকে  আছে তার জন্য */
+  transition: 0.5s;
+}
+h1 {
+  text-align: center;
+}
+.first_part .social_media:hover {
+  /* প্রথম আইকন বাদে যে ভিতরে ঢুকে  আছে তার হভারের জন্য */
+  z-index: 1;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.social_media {
+  text-align: center;
+}
+
+.social_media ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #1b9cfc;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  /* border-radius: 0px 30px;  */
+  /* যদি দুই দিক থেকে রেডিয়াস চেন্জ করতে চান */
+  border-radius: 10px;
+}
+
+.social_media ul li i {
+  color: white;
+  line-height: 60px;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.social_media ul li:hover i {
+  color: black;
+  transition: 0.5s;
+  transform: scale(1.4);
+  /* transform: rotate(45deg); */
+}
+
+.social_media ul li:hover {
+  transition: 0.5s;
+}
+
+.bd_flag {
+  width: 600px;
+  height: 400px;
+  background: green;
+  margin: 80px;
+  position: absolute;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background: red;
+  top: 100px;
+  left: 200px;
+}
+
+.first_part {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  text-align: center;
+}
+.sec_part {
+  display: block;
+  margin-top: 800px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  text-align: center;
+}
+.trd_part {
+  display: block;
+  margin-top: 800px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  text-align: center;
+}
+.frt_part {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin-top: 800px;
+  margin-bottom: 400px;
+  margin-left: 300px;
+  text-align: center;
+}
+/* social Media Hover 45 deg rotation CSS for second Social Media Icon */
+.sec_part .social_media ul li {
+  transition: 0.5s;
+  transform: (45deg);
+}
+
+.sec_part .social_media ul li:hover i {
+  transition: 0.5s;
+  transform: rotate(45deg);
+}
+
+/* social Media Hover 360 deg rotation CSS for 3rd Social Media Icon */
+.trd_part .social_media ul li {
+  transition: 0.5s;
+  transform: (360deg);
+}
+
+.trd_part .social_media ul li:hover i {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+/* social Media Hover border rotation CSS for Forth Social Media Icon */
+.frt_part .social_media ul li {
+  transition: 0.5s;
+}
+
+.frt_part .social_media ul li:hover {
+  background: transparent;
+  border: 1.5px solid #1b9cfc;
+  transition: 0.5s;
+  color: #1b9cfc;
+  text-shadow: 0 0 2px #2c2e2b;
+}
+
+.frt_part .social_media ul li:hover i {
+  color: #1b9cfc;
+  transform: none;
+  transition: 0.5s;
+}
+
+/* animation box CSS part */
+.box {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  /* background: transparent;
+  border: 2px solid #1b9cfc; */
+  margin-top: 40px;
+  /* box-shadow: 0 0 5px gray; */
+  /* animation-name: masud;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal; */
+}
+
+/* @keyframes masud {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+} */
+
+.cyl {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: red;
+  animation-name: masud1;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  border-radius: 50%;
+}
+
+/* @keyframes masud1 {
+  0% {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(100px) rotate(-360deg);
+  } */
+/* translate mane kon area er modhe ghurbe */
+
+@keyframes masud1 {
+  0% {
+    top: 200px;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: 200px;
+  }
+
+  50% {
+    top: 200px;
+    left: 400px;
+  }
+
+  75% {
+    left: 200px;
+    top: 400px;
+  }
+  100% {
+    top: 200px;
+    left: 0;
+  }
+  /* translate mane kon area er modhe ghurbe */
+}
